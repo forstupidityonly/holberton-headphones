@@ -182,6 +182,8 @@ body {
 
   .header {
     width: 100%;
+    height: 869px;
+    background-size: cover;
     background-position: 35% 75%;
   }
 
@@ -301,5 +303,10 @@ body {
     padding-left: 4%;
     padding-right: 4%;
   }
+
+  .hero button {
+  margin-top: 20px;
+  margin-bottom: 65px;
+}
 
 }
