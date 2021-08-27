@@ -31,7 +31,7 @@
   --section-description-width: 637px;
 }
 
-#mcdonalds .mc_menu {
+#mcdonalds .navbar-menu span, #mcdonalds .navbar-menu input {
   display: none;
 }
 
@@ -174,6 +174,36 @@ body {
   align-items: center;
 }
 
+.what_we_do_content {
+  height: 313px;
+  width: 637px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.what_we_do {
+  text-align: center;
+  max-width: var(--section-description-width);
+  font-family: var(--font-family-one);
+}
+
+.what_we_do h1 {
+  font-size: var(--font-size-x-large);
+  font-weight: var(--font-weight-bold);
+  line-height: 40px;
+  margin: 0;
+  color: var(--blue-color);
+} 
+
+.what_we_do p {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-regular);
+  line-height: 26px;
+  margin: 0;
+  color: var(--blue-color);
+}
+
 @media (max-width:375px) {
   .logo {
     display: flex;
@@ -204,11 +234,15 @@ body {
   margin: 0;
   }
 
-  #mcdonalds .mc_menu {
+  #mcdonalds .navbar-menu span, #mcdonalds .navbar-menu input {
+  display: none;
+}
+
+  #mcdonalds .navbar-menu span, #mcdonalds .navbar-menu input {
     display: block;
   }
 
-  #mcdonalds .mc_menu input {
+  #mcdonalds .navbar-menu input {
     display: block;
     width: 40px;
     height: 32px;
@@ -221,14 +255,14 @@ body {
     -webkit-touch-callout: none;
 }
 
-  #mcdonalds span
+  #mcdonalds .navbar-menu span
   {
     display: block;
     height: 2px;
     width: 30px;
     margin-bottom: 5px;
     position: relative;
-    top: -30px;
+    top: -3px;
     left: -35px;
     background: var(--white-color);
     border-radius: 3px;
@@ -239,46 +273,54 @@ body {
               opacity 0.55s ease;
   }
 
-  #mcdonalds .one_bar {
+  #mcdonalds .navbar-menu .one_bar {
     width: 20px;
   }
 
-  #mcdonalds .two_bar {
+  #mcdonalds .navbar-menu .two_bar {
     width: 13px;
   }
 
-  #mcdonalds .three_bar {
+  #mcdonalds .navbar-menu .three_bar {
     width: 18px;
   }
 
-  #mcdonalds span:first-child
+  #mcdonalds .navbar-menu span:first-child
   {
     transform-origin: 0% 0%;
   }
 
-  #mcdonalds span:nth-last-child(2)
+  #mcdonalds .navbar-menu span:nth-last-child(2)
   {
     transform-origin: 0% 100%;
   }
 
-  #mcdonalds input:checked ~ span
+  #mcdonalds .navbar-menu input:checked ~ span
   {
     opacity: 1;
-    width: 29px;
-    transform: rotate(-45deg) translate(-2px, -1px);
+    width: 27px;
+    transform: rotate(45deg) translate(-2px, -1px);
     background: var(--white-color);
   }
 
-  #mcdonalds input:checked ~ span:nth-last-child(2)
+  #mcdonalds .navbar-menu input:checked ~ span:nth-last-child(3)
   {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
-  #mcdonalds input:checked ~ span:nth-last-child(3)
+  #mcdonalds .navbar-menu input:checked ~ span:nth-last-child(2)
   {
-    width: 29px;
-    transform: rotate(45deg) translate(0, -1px);
+    width: 27px;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #mcdonalds .navbar-menu .nav {
+    display: none;
+  }
+
+  #mcdonalds .navbar-menu input:checked ~ ul {
+    display: block;
   }
 
   .hero-content {
@@ -286,7 +328,7 @@ body {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  top: 327px;
+  top: 150px;
   }
 
   .hero p {
