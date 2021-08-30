@@ -70,11 +70,6 @@ body {
   background-image: url(images/headphones_hero_1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  /*top: 0;
-  right: 0;
-  left: 0;*/
-  /*margin: 1rem auto;
-  padding-top: 27px;*/
   height: 800px;
   width: 100%;
 }
@@ -174,34 +169,30 @@ body {
   align-items: center;
 }
 
-.what_we_do_content {
-  height: 313px;
-  width: 637px;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
 .what_we_do {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  max-width: var(--section-description-width);
-  font-family: var(--font-family-one);
+  justify-content: center;
+  color: var(--blue-color);
+  width: var(--section-description-width);
 }
 
-.what_we_do h1 {
-  font-size: var(--font-size-x-large);
-  font-weight: var(--font-weight-bold);
-  line-height: 40px;
-  margin: 0;
-  color: var(--blue-color);
-} 
+.icon {
+  font-size: 150px;
+}
 
-.what_we_do p {
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-regular);
-  line-height: 26px;
-  margin: 0;
-  color: var(--blue-color);
+.section_body {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: center;
+}
+
+.wedo {
+  margin: 60px;
 }
 
 @media (max-width:375px) {
@@ -350,5 +341,9 @@ body {
   margin-top: 20px;
   margin-bottom: 65px;
 }
+
+  .section_body {
+    max-width: 200px;
+  }
 
 }
