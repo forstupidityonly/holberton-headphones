@@ -171,18 +171,33 @@ body {
 
 .what_we_do {
   padding-top: 110px;
+  padding-bottom: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   justify-content: center;
   color: var(--blue-color);
+  width: 100%;
+  height: 650%;
+}
+
+ .container_2, .container_3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.what_we_do_content, .our_results_content {
+  height: 313px;
   width: var(--section-description-width);
 }
 
 .wedo {
   width: 207px;
   height: 180px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .icon {
@@ -198,12 +213,54 @@ body {
 
 .section_body {
     width: 1000px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    line-height: 15px;
+}
+
+.our_results {
+  background-image: url(images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.pentagone {
+  height: 190px;
+  width: 190px;
+}
+
+/* =================================================================
+tablet media query */
+
+@media (max-width:768px) {
+
+  .container_2 {
+    width: 637px;
+    height: 184px;
+  }
+
+  .what_we_do {
+    height: 876px;
+    width: 768px;
+  }
+
+  .section_body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 472px;
+  height: 469px;
+}
+
+  .our_results {
+    width: 768px;
+    height: 876px;
+  }
 }
 
 /* =================================================================
@@ -359,40 +416,20 @@ phone media query */
 .what_we_do {
   width: 325px;
   height: 288px;
-  background-color: gold;
   display: block;
   align-items: center;
 }
 
 .what_we_do_content {
-  background-color: palevioletred;
   width: 325px;
   height: 288px;
 }
 
 .section_body {
-  background-color: aqua;
-  width: 207px;
+  width: 325px;
   height: 1020px;
   display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
 }
 
-}
-
-@media (max-width:768px) {
-
-  .container_2 {
-    width: 637px;
-    height: 184px;
-  }
-
-  .section_body {
-  display: flex;
-  flex-wrap: wrap;
-  width: 472px;
-  height: 469px;
-}
 }
