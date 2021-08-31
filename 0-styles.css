@@ -189,7 +189,6 @@ body {
   }
 
 .what_we_do_content, .our_results_content {
-  height: 313px;
   width: var(--section-description-width);
 }
 
@@ -231,8 +230,8 @@ body {
 }
 
 .pentagone {
-  height: 190px;
-  width: 190px;
+  height: 180px;
+  width: 180px;
 }
 
 /* =================================================================
@@ -245,7 +244,7 @@ tablet media query */
     height: 184px;
   }
 
-  .what_we_do {
+  .what_we_do, .our_results {
     height: 876px;
     width: 768px;
   }
@@ -257,11 +256,6 @@ tablet media query */
   width: 472px;
   height: 469px;
 }
-
-  .our_results {
-    width: 768px;
-    height: 876px;
-  }
 }
 
 /* =================================================================
@@ -414,9 +408,9 @@ phone media query */
   margin-bottom: 65px;
 }
 
-.what_we_do {
+.what_we_do, .our_results {
   width: 325px;
-  height: 288px;
+  height: 1400px;
   display: block;
   align-items: center;
 }
@@ -431,6 +425,11 @@ phone media query */
   height: 1020px;
   display: flex;
   margin: 0;
+}
+
+.container_2, .container_3 {
+  width: 350px;
+  height: 1000px;
 }
 
 }
