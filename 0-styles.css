@@ -225,14 +225,16 @@ body {
 .our_results {
   background-image: url(images/headphones_hero_2.jpg);
   background-repeat: no-repeat;
-  text-align: center;
   color: var(--white-color);
 }
 
 .pentagone {
   height: 180px;
   width: 180px;
+  position: relative;
 }
+
+
 
 /* =================================================================
 tablet media query */
@@ -409,26 +411,31 @@ phone media query */
 }
 
 .what_we_do, .our_results {
-  width: 325px;
+  width: 375px;
   height: 1400px;
   display: block;
   align-items: center;
 }
 
-.what_we_do_content {
-  width: 325px;
+.our_results {
+  background-size: 1000px;
+  background-position: 0% 0%;
+}
+
+.what_we_do_content, .our_results_content {
+  width: 350px;
   height: 288px;
 }
 
 .section_body {
-  width: 325px;
+  width: 350px;
   height: 1020px;
   display: flex;
   margin: 0;
 }
 
 .container_2, .container_3 {
-  width: 350px;
+  width: 375px;
   height: 1000px;
 }
 
