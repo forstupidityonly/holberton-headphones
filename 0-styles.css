@@ -169,7 +169,7 @@ body {
   align-items: center;
 }
 
-.what_we_do {
+.what_we_do, .our_results {
   padding-top: 110px;
   padding-bottom: 50px;
   display: block;
@@ -227,6 +227,7 @@ body {
   background-image: url(images/headphones_hero_2.jpg);
   background-repeat: no-repeat;
   text-align: center;
+  color: var(--white-color);
 }
 
 .pentagone {
