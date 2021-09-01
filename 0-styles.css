@@ -245,6 +245,23 @@ body {
   left: 0px;
 }
 
+.section_body_4 {
+  font-weight: var(--font-weight-bold);
+  line-height: 50px;
+}
+
+.contact_feild > input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.contact_feild > label {
+  position: relative;
+  top: -6px;
+  left: 47px;
+}
+
 
 /* =================================================================
 tablet media query */
