@@ -66,6 +66,12 @@ body {
     overflow-x: hidden; 
 }
 
+
+ footer {
+  background-color: var(--blue-color);
+  height: 249px;
+}
+
 .header {
   background-image: url(images/headphones_hero_1.jpg);
   background-repeat: no-repeat;
@@ -281,6 +287,22 @@ body {
   z-index: 2;
 }
 
+.footer_content {
+  height: 249px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cpy_write {
+  margin-top: 175px;
+}
+
+.footer_content > .footer_icons > span {
+  font-size: 30px;
+  color: var(--white-color);
+}
 
 /* =================================================================
 tablet media query */
@@ -502,35 +524,44 @@ phone media query */
   left: -120px;
 }
 
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+
+.footer_img {
+  margin-top: 30px;
+}
+
+.footer_icons {
+  margin-top: -115px;
+}
+
+.cpy_write {
+  margin-top: 150px;
+}
+
 }
 
 /*
 
-.contact_feild > input {
-  width: 335px;
-  border-width: 1px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  position: relative;
-  z-index: 1;
+.footer_content {
+  height: 249px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.contact_feild > label {
-  position: relative;
-  top: -6px;
-  left: 50px;
-  z-index: 2;
+.cpy_write {
+  margin-top: 200px;
 }
 
-.ur_message_feild > input {
-  left: -25px;
-  z-index: 1;
-}
-
-.ur_message_feild > label {
-  left: 80px;
-  z-index: 2;
+.footer_content > .footer_icons > span {
+  font-size: 30px;
+  color: var(--white-color);
 }
 
 */
