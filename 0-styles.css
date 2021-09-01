@@ -169,7 +169,7 @@ body {
   align-items: center;
 }
 
-.what_we_do, .our_results {
+.what_we_do, .our_results, .contact_us {
   padding-top: 110px;
   padding-bottom: 50px;
   display: block;
@@ -244,7 +244,6 @@ body {
   top: -120px;
   left: 0px;
 }
-
 
 
 /* =================================================================
