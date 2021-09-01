@@ -140,7 +140,7 @@ body {
   margin: 0;
 }
 
-.hero button {
+ button {
   border: none;
   border-radius: 15px;
   height: 44px;
@@ -251,15 +251,30 @@ body {
 }
 
 .contact_feild > input {
+  width: 335px;
+  border-width: 1px;
   border-top: none;
   border-left: none;
   border-right: none;
+  position: relative;
+  z-index: 1;
 }
 
 .contact_feild > label {
   position: relative;
   top: -6px;
-  left: 47px;
+  left: 50px;
+  z-index: 2;
+}
+
+.ur_message_feild > input {
+  left: -25px;
+  z-index: 1;
+}
+
+.ur_message_feild > label {
+  left: 80px;
+  z-index: 2;
 }
 
 
