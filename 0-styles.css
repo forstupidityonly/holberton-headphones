@@ -156,6 +156,10 @@ body {
   cursor: pointer;
 }
 
+.section_body_4 > button {
+  filter: none;
+}
+
 .button:hover,
 .button:active {
   opacity: 0.9;
@@ -485,4 +489,48 @@ phone media query */
   height: 1000px;
 }
 
+.contact_feild > label {
+  left: -145px;
+  top: 45px;
 }
+
+.ur_message_feild > input {
+  left: 0px;
+}
+
+.ur_message_feild > label {
+  left: -120px;
+}
+
+}
+
+/*
+
+.contact_feild > input {
+  width: 335px;
+  border-width: 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  z-index: 1;
+}
+
+.contact_feild > label {
+  position: relative;
+  top: -6px;
+  left: 50px;
+  z-index: 2;
+}
+
+.ur_message_feild > input {
+  left: -25px;
+  z-index: 1;
+}
+
+.ur_message_feild > label {
+  left: 80px;
+  z-index: 2;
+}
+
+*/
