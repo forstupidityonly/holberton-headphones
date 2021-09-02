@@ -1,0 +1,567 @@
+/* Reset / Normalize
+  ============================= */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+/* Variables
+  ============================= */
+
+:root {
+  --font-family-one: "Source Sans Pro", sans-serif;
+  --font-family-two: "spin Cycle OT", sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  --font-size-small: 12px;
+  --font-size-medium: 14px;
+  --font-size-large: 16px;
+  --font-size-x-large: 32px;
+  --font-size-xx-large: 42px;
+  /** COLORS **/
+  --red-color: #FF6565;
+  --blue-color: #071629;
+  --white-color: #FFFFFF;
+
+  /** NAVBAR **/
+  --nav-item-margin: 0 0 0 2rem;
+  --nav-item-font-family: var(--font-family-one);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-small);
+  --nav-item-letter-spacing: .04rem;
+
+  --section-description-width: 637px;
+}
+
+#mcdonalds .navbar-menu span, #mcdonalds .navbar-menu input {
+  display: none;
+}
+
+#mcdonalds a {
+  color: var(--white-color);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#mcdonalds a:hover,
+#mcdonalds a:active {
+    color: var(--red-color);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--font-size-large);
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--white-color);
+    font-family: var(--font-family-one);
+}
+
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+
+ footer {
+  background-color: var(--blue-color);
+  height: 249px;
+}
+
+.header {
+  background-image: url(images/headphones_hero_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  width: 100%;
+}
+
+.logo {
+    width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  max-height: 32px;
+  margin-left: 15%;
+  margin-right: 15%;
+  align-items: center;
+  padding-top: 27px;
+}
+
+.nav {
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: -25px;
+}
+
+.nav .nav-item {
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+}
+
+.nav .nav-item + .nav-item {
+  margin: var(--nav-item-margin);
+}
+
+.hero {
+  padding-top: 360px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: var(--section-description-width);
+  font-family: var(--font-family-one);
+}
+
+.hero h1 {
+  font-size: var(--font-size-x-large);
+  font-weight: var(--font-weight-bold);
+  line-height: 40px;
+  margin: 0;
+}
+
+.hero span {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  line-height: 20px;
+}
+
+.hero p {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-regular);
+  line-height: 26px;
+  margin: 0;
+}
+
+ button {
+  border: none;
+  border-radius: 15px;
+  height: 44px;
+  width: 162px;
+  filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+  background-color: var(--red-color);
+  color: var(--white-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
+  line-height: 17.6px;
+  margin-top: 40px;
+  margin-bottom: 65px;
+  cursor: pointer;
+}
+
+.section_body_4 > button {
+  filter: none;
+}
+
+.button:hover,
+.button:active {
+  opacity: 0.9;
+}
+
+.hero-content {
+  height: 313px;
+  width: var(--section-description-width);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.what_we_do, .our_results, .contact_us {
+  padding-top: 110px;
+  padding-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+  color: var(--blue-color);
+  width: 100%;
+  height: 650%;
+}
+
+ .container_2, .container_3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.what_we_do_content, .our_results_content {
+  width: var(--section-description-width);
+}
+
+.wedo {
+  width: 207px;
+  height: 180px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.icon {
+  font-size: 6rem;
+  color: var(--red-color);
+}
+
+.container_2 {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section_body {
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 15px;
+}
+
+.our_results {
+  background-color: #091627;
+  background-image: url(images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  color: var(--white-color);
+}
+
+.pentagone {
+  height: 180px;
+  width: 180px;
+  position: relative;
+}
+
+.rez {
+  position: relative;
+}
+
+.hi_rez {
+  position: relative;
+  top: -120px;
+  left: 0px;
+}
+
+.section_body_4 {
+  font-weight: var(--font-weight-bold);
+  line-height: 50px;
+}
+
+.contact_feild > input {
+  width: 335px;
+  border-width: 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  z-index: 1;
+}
+
+.contact_feild > label {
+  position: relative;
+  top: -6px;
+  left: 50px;
+  z-index: 2;
+}
+
+.ur_message_feild > input {
+  left: -25px;
+  z-index: 1;
+}
+
+.ur_message_feild > label {
+  left: 80px;
+  z-index: 2;
+}
+
+.footer_content {
+  height: 249px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cpy_write {
+  margin-top: 175px;
+}
+
+.footer_content > .footer_icons > span {
+  font-size: 30px;
+  color: var(--white-color);
+}
+
+/* =================================================================
+tablet media query */
+
+@media (max-width:768px) {
+
+  .container_2 {
+    width: 637px;
+    height: 184px;
+  }
+
+  .what_we_do, .our_results {
+    height: 876px;
+    width: 768px;
+  }
+
+  .our_results {
+    background-position: 50% 0%;
+  }
+
+  .section_body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 472px;
+  height: 469px;
+}
+}
+
+/* =================================================================
+phone media query */
+
+@media (max-width:375px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    width: 100%;
+    height: 869px;
+    background-size: cover;
+    background-position: 35% 75%;
+  }
+
+  ul.nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .navbar-menu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 40px;
+  }
+
+  .nav .nav-item + .nav-item {
+  margin: 0;
+  }
+
+  #mcdonalds .navbar-menu span, #mcdonalds .navbar-menu input {
+  display: none;
+}
+
+  #mcdonalds .navbar-menu span, #mcdonalds .navbar-menu input {
+    display: block;
+  }
+
+  #mcdonalds .navbar-menu input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 27px;
+    left: 11px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 1; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+  #mcdonalds .navbar-menu span
+  {
+    display: block;
+    height: 2px;
+    width: 30px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -3px;
+    left: -35px;
+    background: var(--white-color);
+    border-radius: 3px;
+    z-index: 2;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+  }
+
+  #mcdonalds .navbar-menu .one_bar {
+    width: 20px;
+  }
+
+  #mcdonalds .navbar-menu .two_bar {
+    width: 13px;
+  }
+
+  #mcdonalds .navbar-menu .three_bar {
+    width: 18px;
+  }
+
+  #mcdonalds .navbar-menu span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #mcdonalds .navbar-menu span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  #mcdonalds .navbar-menu input:checked ~ span
+  {
+    opacity: 1;
+    width: 27px;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: var(--white-color);
+  }
+
+  #mcdonalds .navbar-menu input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #mcdonalds .navbar-menu input:checked ~ span:nth-last-child(2)
+  {
+    width: 27px;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #mcdonalds .navbar-menu .nav {
+    display: none;
+  }
+
+  #mcdonalds .navbar-menu input:checked ~ ul {
+    display: block;
+  }
+
+  .hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  top: 150px;
+  }
+
+  .hero p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .hero span {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .hero h1 {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .hero button {
+  margin-top: 20px;
+  margin-bottom: 65px;
+}
+
+.what_we_do, .our_results {
+  width: 375px;
+  height: 1400px;
+  display: block;
+  align-items: center;
+}
+
+.our_results {
+  background-size: 1000px;
+  background-position: 50% 0%;
+}
+
+.what_we_do_content, .our_results_content {
+  width: 350px;
+  height: 288px;
+}
+
+.section_body {
+  width: 350px;
+  height: 1020px;
+  display: flex;
+  margin: 0;
+}
+
+.container_2, .container_3 {
+  width: 375px;
+  height: 1000px;
+}
+
+.contact_feild > label {
+  left: -145px;
+  top: 45px;
+}
+
+.ur_message_feild > input {
+  left: 0px;
+}
+
+.ur_message_feild > label {
+  left: -120px;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+
+.footer_img {
+  margin-top: 30px;
+}
+
+.footer_icons {
+  margin-top: -115px;
+}
+
+.cpy_write {
+  margin-top: 150px;
+}
+
+}
+
+/*
+
+.footer_content {
+  height: 249px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cpy_write {
+  margin-top: 200px;
+}
+
+.footer_content > .footer_icons > span {
+  font-size: 30px;
+  color: var(--white-color);
+}
+
+*/
